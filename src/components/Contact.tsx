@@ -66,14 +66,14 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             Entre em <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Contato</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Pronto para transformar sua ideia em realidade? 
+          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+            Pronto para transformar sua ideia em realidade?
             Entre em contato conosco e vamos conversar sobre seu projeto.
           </p>
         </div>
@@ -82,19 +82,19 @@ export default function Contact() {
           {/* Contact Information */}
           <div className="lg:col-span-1">
             <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Informações de Contato</h3>
-              
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Informações de Contato</h3>
+
               {contactInfo.map((item, index) => (
-                <Card key={index} className="hover:shadow-lg transition-all duration-300 border-0 shadow-md">
+                <Card key={index} className="hover:shadow-lg transition-all duration-300 border-0 border-gray-200 dark:border-gray-800 shadow-md bg-white dark:bg-gray-800">
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
                       <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-lg flex items-center justify-center">
                         <item.icon className="h-6 w-6 text-white" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-gray-900 mb-1">{item.title}</h4>
-                        <p className="text-gray-900 font-medium">{item.info}</p>
-                        <p className="text-sm text-gray-600">{item.description}</p>
+                        <h4 className="font-semibold text-gray-900 dark:text-white mb-1">{item.title}</h4>
+                        <p className="text-gray-900 dark:text-white font-medium">{item.info}</p>
+                        <p className="text-sm text-gray-600 dark:text-gray-400">{item.description}</p>
                       </div>
                     </div>
                   </CardContent>
@@ -105,10 +105,10 @@ export default function Contact() {
 
           {/* Contact Form */}
           <div className="lg:col-span-2">
-            <Card className="shadow-xl border-0">
+            <Card className="shadow-xl border-0 border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-800">
               <CardHeader>
-                <CardTitle className="text-2xl text-gray-900">Solicitar Orçamento</CardTitle>
-                <p className="text-gray-600">Preencha o formulário abaixo e nossa equipe entrará em contato.</p>
+                <CardTitle className="text-2xl text-gray-900 dark:text-white">Solicitar Orçamento</CardTitle>
+                <p className="text-gray-600 dark:text-gray-400">Preencha o formulário abaixo e nossa equipe entrará em contato.</p>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -172,7 +172,7 @@ export default function Contact() {
                       name="service"
                       value={formData.service}
                       onChange={handleChange}
-                      className="w-full h-12 px-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="w-full h-12 px-3 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                     >
                       <option value="">Selecione um serviço</option>
                       <option value="web">Desenvolvimento Web</option>

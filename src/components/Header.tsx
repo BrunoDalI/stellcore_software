@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
+import ThemeToggle from './ThemeToggle';
 import logo from '@/images/logo.jpeg';
 
 export default function Header() {
@@ -15,7 +16,7 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
+    <header className="fixed top-0 w-full bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800 z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
@@ -24,7 +25,7 @@ export default function Header() {
               alt="StellCore Logo"
               className="w-8 h-8 rounded-lg object-contain"
             />
-            <span className="text-xl font-bold text-gray-900">StellCore Software</span>
+            <span className="text-xl font-bold text-gray-900 dark:text-white">StellCore Software</span>
             </div>
 
           {/* Desktop Navigation */}
@@ -47,18 +48,19 @@ export default function Header() {
             >
               Sobre
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection('contact')}
-              className="text-gray-700 hover:text-blue-600 transition-colors"
+              className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
               Contato
             </button>
-            <Button 
+            <Button
               onClick={() => scrollToSection('contact')}
               className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700"
             >
               Solicitar Orçamento
             </Button>
+            <ThemeToggle />
           </nav>
 
           {/* Mobile Menu Button */}
