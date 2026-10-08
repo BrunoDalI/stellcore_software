@@ -17,7 +17,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-100 pt-20">
+    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-100 dark:from-gray-900 dark:via-blue-900 dark:to-indigo-900 pt-20">
       <div className="container mx-auto px-4 py-20">
         <div className="text-center max-w-4xl mx-auto">
           <div className="animate-in fade-in slide-in-from-bottom-8 duration-1000">
