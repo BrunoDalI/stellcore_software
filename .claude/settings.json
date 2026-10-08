@@ -8,7 +8,13 @@
       "Bash(git branch *)",
       "Bash(git stash *)",
       "Bash(git reset *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(npm run *)",
+      "Bash(git commit -m 'fix: configure GitHub Pages deployment *)",
+      "Bash(git pull *)",
+      "Bash(rm -rf .claude/settings.json)",
+      "Bash(git commit -m 'fix: configure GitHub Pages base URL and add deploy workflow *)",
+      "Bash(git rebase *)"
     ]
   }
 }
