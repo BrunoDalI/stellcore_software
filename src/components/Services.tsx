@@ -42,37 +42,37 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-20 bg-white">
+    <section id="services" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             Nossos <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Serviços</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Oferecemos soluções completas em desenvolvimento de software, 
+          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+            Oferecemos soluções completas em desenvolvimento de software,
             desde a concepção até a implementação e manutenção.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card 
-              key={index} 
-              className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-0 shadow-lg bg-gradient-to-br from-white to-gray-50"
+            <Card
+              key={index}
+              className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-0 border-gray-200 dark:border-gray-800 shadow-lg bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900"
             >
               <CardHeader>
                 <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-xl flex items-center justify-center mb-4">
                   <service.icon className="h-8 w-8 text-white" />
                 </div>
-                <CardTitle className="text-xl text-gray-900">{service.title}</CardTitle>
-                <CardDescription className="text-gray-600 text-base leading-relaxed">
+                <CardTitle className="text-xl text-gray-900 dark:text-white">{service.title}</CardTitle>
+                <CardDescription className="text-gray-600 dark:text-gray-400 text-base leading-relaxed">
                   {service.description}
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
                   {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center text-sm text-gray-700">
+                    <li key={featureIndex} className="flex items-center text-sm text-gray-700 dark:text-gray-300">
                       <div className="w-2 h-2 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full mr-3"></div>
                       {feature}
                     </li>

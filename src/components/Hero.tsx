@@ -17,7 +17,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-100 pt-20">
+    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-100 dark:from-gray-900 dark:via-blue-900 dark:to-indigo-900 pt-20">
       <div className="container mx-auto px-4 py-20">
         <div className="text-center max-w-4xl mx-auto">
           <div className="animate-in fade-in slide-in-from-bottom-8 duration-1000">
@@ -29,7 +29,7 @@ export default function Hero() {
               <span className="text-gray-900">Software</span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
               Transformamos suas ideias em soluções tecnológicas inovadoras.
               <br />
               Desenvolvimento de software profissional e sob medida.
@@ -55,28 +55,28 @@ export default function Hero() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-              <div className="flex flex-col items-center p-6 bg-white/70 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+              <div className="flex flex-col items-center p-6 bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
                 <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center mb-4">
                   <Code className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Desenvolvimento Ágil</h3>
-                <p className="text-gray-600 text-center">Metodologias modernas para entregas rápidas e eficientes</p>
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Desenvolvimento Ágil</h3>
+                <p className="text-gray-600 dark:text-gray-400 text-center">Metodologias modernas para entregas rápidas e eficientes</p>
               </div>
 
-              <div className="flex flex-col items-center p-6 bg-white/70 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+              <div className="flex flex-col items-center p-6 bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
                 <div className="w-16 h-16 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full flex items-center justify-center mb-4">
                   <Zap className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Alta Performance</h3>
-                <p className="text-gray-600 text-center">Soluções otimizadas para máximo desempenho</p>
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Alta Performance</h3>
+                <p className="text-gray-600 dark:text-gray-400 text-center">Soluções otimizadas para máximo desempenho</p>
               </div>
 
-              <div className="flex flex-col items-center p-6 bg-white/70 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+              <div className="flex flex-col items-center p-6 bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
                 <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mb-4">
                   <Shield className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Segurança Total</h3>
-                <p className="text-gray-600 text-center">Proteção avançada e conformidade com padrões</p>
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Segurança Total</h3>
+                <p className="text-gray-600 dark:text-gray-400 text-center">Proteção avançada e conformidade com padrões</p>
               </div>
             </div>
           </div>
