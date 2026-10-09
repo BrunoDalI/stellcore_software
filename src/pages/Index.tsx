@@ -2,7 +2,7 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Services from '@/components/Services';
 import About from '@/components/About';
-import Testimonials from '@/components/Testimonials';
+import Projects from '@/components/Projects';
 import FAQ from '@/components/FAQ';
 import Newsletter from '@/components/Newsletter';
 import Contact from '@/components/Contact';
@@ -15,7 +15,7 @@ export default function Index() {
       <Hero />
       <Services />
       <About />
-      <Testimonials />
+      <Projects />
       <FAQ />
       <Newsletter />
       <Contact />
